@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import authSlice from '../store/state-slices/auth-slice';
 
 const Header = () => {
-
+    //Getting the data from the redux store
     const isLoggedIn = useSelector(state => state.auth.isLoggedIn)
     const userData = useSelector(state => state.auth.userData)
     const dispatch = useDispatch()
